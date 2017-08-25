@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+	<typeAliases>		
+<!-- 		<typeAlias alias="1" type="com.nyngw.dto.Approval_LineVO" /> -->
+<!-- 		<typeAlias alias="attendance" type="com.nyngw.dto.AttendanceVO" /> -->
+<!-- 		<typeAlias alias="2" type="com.nyngw.dto.Board_CommentVO" /> -->
+<!-- 		<typeAlias alias="board" type="com.nyngw.dto.BoardVO" /> -->
+<!-- 		<typeAlias alias="3" type="com.nyngw.dto.Code_KindVO" /> -->
+<!-- 		<typeAlias alias="4" type="com.nyngw.dto.Common_CodeVO" /> -->
+<!-- 		<typeAlias alias="company" type="com.nyngw.dto.CompanyVO" /> -->
+<!-- 		<typeAlias alias="department" type="com.nyngw.dto.DepartmentVO" /> -->
+<!-- 		<typeAlias alias="5" type="com.nyngw.dto.Diligence_And_LazinessVO" /> -->
+<!-- 		<typeAlias alias="document" type="com.nyngw.dto.DocumentVO" /> -->
+<!-- 		<typeAlias alias="6" type="com.nyngw.dto.Duty_DocumentVO" /> -->
+<!-- 		<typeAlias alias="7" type="com.nyngw.dto.Electronic_ApprovalVO" /> -->
+<!-- 		<typeAlias alias="manager" type="com.nyngw.dto.ManagerVO" /> -->
+<!-- 		<typeAlias alias="8" type="com.nyngw.dto.Meeting_DocumentVO" /> -->
+<!-- 		<typeAlias alias="meeting" type="com.nyngw.dto.MeetingVO" /> -->
+<!-- 		<typeAlias alias="meetingroom" type="com.nyngw.dto.MeetingRoomVO" /> -->
+<!-- 		<typeAlias alias="9" type="com.nyngw.dto.Member_Detail_InformationVO" /> -->
+<!-- 		<typeAlias alias="member" type="com.nyngw.dto.MemberVO" /> -->
+<!-- 		<typeAlias alias="memo" type="com.nyngw.dto.MemoVO" /> -->
+<!-- 		<typeAlias alias="99" type="com.nyngw.dto.Pay_PolicyVO" /> -->
+<!-- 		<typeAlias alias="positing" type="com.nyngw.dto.PositionVO" /> -->
+<!-- 		<typeAlias alias="reservation" type="com.nyngw.dto.ReservationVO" /> -->
+<!-- 		<typeAlias alias="schedule" type="com.nyngw.dto.ScheduleVO" /> -->
+<!-- 		<typeAlias alias="userinterface" type="com.nyngw.dto.UserInterfaceVO" /> -->
+<!-- 		<typeAlias alias="999" type="com.nyngw.dto.Vacation_PolicyVO" /> -->
+<!-- 		<typeAlias alias="vacation" type="com.nyngw.dto.VacationVO" /> -->
+<!-- 		<typeAlias alias="9996" type="com.nyngw.dto.Work_TimeVO" /> -->
+<!-- 		<typeAlias alias="int" type="java.lang.Integer" /> -->
+<!-- 		<typeAlias alias="str" type="java.lang.String" /> -->
+	</typeAliases>
+	
+	
+
+	<mappers>		
+					
+		<!-- 업무지원 -->
+		<!-- 업무일지XML -->
+<!-- 		<mapper resource="com/nyngw/businessSupport/dutyDocument/sqlMaps/DutyDocument.xml" /> -->
+		<!-- 업무보고XML -->
+<!-- 		<mapper resource="com/nyngw/businessSupport/dutyReport/sqlMaps/DutyReport.xml" /> -->
+		<!-- 업무상태보고XML -->
+<!-- 		<mapper resource="com/nyngw/businessSupport/dutyStatusReport/sqlMaps/DutyStatusReport.xml" /> -->
+		<!-- 회의시설관리XML -->
+<!-- 		<mapper resource="com/nyngw/businessSupport/meetingFacilitiesManagement/sqlMaps/MeetingFacilitiesManagement.xml" /> -->
+		<!-- 회의관리XML -->
+<!-- 		<mapper resource="com/nyngw/businessSupport/meetingManagement/sqlMaps/MeetingManagement.xml" /> -->
+		
+		<!-- 문서관리 -->
+		<!-- 문서관리XML -->
+<!-- 		<mapper resource="com/nyngw/documentManagement/documentManager/sqlMaps/DocumentManager.xml" /> -->
+		<!-- 전자결재양식관리XML -->
+<!-- 		<mapper resource="com/nyngw/documentManagement/electronicApprovalFormManagement/sqlMaps/ElectronicApprovalFormManagement.xml" /> -->
+		
+		<!-- 전자결재 -->				
+		<!-- 결재라인관리XML -->		
+<!-- 		<mapper resource="com/nyngw/electronicApproval/approvalLineManagement/sqlMaps/ApprovalLineManagement.xml" /> -->
+		<!-- 결재진행XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/approvalProgress/sqlMaps/ApprovalProgress.xml" /> -->
+		<!-- 근태신청서XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/dalApplicationForm/sqlMaps/DalApplicationForm.xml" /> -->
+		<!-- 기안하기XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/draft/sqlMaps/Draft.xml" /> -->
+		<!-- 전자결재메인XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/electronicApprovalMain/sqlMaps/ElectronicApprovalMain.xml" /> -->
+		<!-- 개인문서함XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/individualDocumentBox/sqlMaps/IndividualDocumentBox.xml" /> -->
+		<!-- 그외문서함XML -->
+<!-- 		<mapper resource="com/nyngw/electronicApproval/theRestDocumentBox/sqlMaps/TheRestDocumentBox.xml" /> -->
+		
+		<!-- 환경설정관리 -->	
+		<!-- 인사관리설정XML -->
+<!-- 		<mapper resource="com/nyngw/environmentSetting/humanResourceSetting/sqlMaps/HumanResourceSetting.xml" /> -->
+		<!-- 기획홍보설정 -->	
+<!-- 		<mapper resource="com/nyngw/environmentSetting/planPublicRelationsSetting/sqlMaps/PlanPublicRelationsSetting.xml" /> -->
+		
+		<!-- 홈화면 -->		
+		<!-- 사용자지정UI -->		
+<!-- 		<mapper resource="com/nyngw/homeMain/appointedUI/sqlMaps/AppointedUI.xml" /> -->
+		<!-- 사용자맞춤UI -->		
+<!-- 		<mapper resource="com/nyngw/homeMain/autoUI/sqlMaps/AutoUI.xml" /> -->
+		<!-- 기본UI -->		
+<!-- 		<mapper resource="com/nyngw/homeMain/basicUI/sqlMaps/BasicUI.xml" /> -->
+		
+		<!-- 인사관리 -->		
+		<!-- 근태관리 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/dalManagement/sqlMaps/DalManagement.xml" /> -->
+		<!-- 가입된회원리스트 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/joinMemberList/sqlMaps/JoinMemberList.xml" /> -->
+		<!-- 사원가입 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/memberJoin/sqlMaps/MemberJoin.xml" /> -->
+		<!-- 급여관리 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/payManagement/sqlMaps/PayManagement.xml" /> -->
+		<!-- 퇴사자회원리스트 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/retiredMemberList/sqlMaps/RetiredMemberList.xml" /> -->
+		<!-- 휴가관리 -->		
+<!-- 		<mapper resource="com/nyngw/humanResource/vacationManagement/sqlMaps/VacationManagement.xml" /> -->
+		
+		<!-- 로그인 -->		
+<!-- 		<mapper resource="com/nyngw/login/sqlMaps/Login.xml" /> -->
+		
+		<!-- 마이페이지 -->		
+		<!-- 기본설정 -->		
+<!-- 		<mapper resource="com/nyngw/mypage/basicSetting/sqlMaps/BasicSetting.xml" /> -->
+		<!-- 나의근태관리 -->		
+<!-- 		<mapper resource="com/nyngw/mypage/myDalManagement/sqlMaps/MyDalManagement.xml" /> -->
+		<!-- 나의급여관리 -->		
+<!-- 		<mapper resource="com/nyngw/mypage/myPayManagement/sqlMaps/MyPayManagement.xml" /> -->
+		
+		<!-- 정보공유 -->		
+		<!-- 게시판 -->		
+<!-- 		<mapper resource="com/nyngw/sharingInformation/board/sqlMaps/Board.xml" /> -->
+		<!-- 직원정보 -->		
+<!-- 		<mapper resource="com/nyngw/sharingInformation/memberInformation/sqlMaps/MemberInformation.xml" /> -->
+		<!-- 공지사항 -->		
+<!-- 		<mapper resource="com/nyngw/sharingInformation/noticeMatter/sqlMaps/NoticeMatter.xml" /> -->
+		<!-- 일정관리 -->		
+<!-- 		<mapper resource="com/nyngw/sharingInformation/scheduleManagement/sqlMaps/ScheduleManagement.xml" /> -->
+
+	</mappers>
+
+</configuration>
+
+
+
+
+
+	
