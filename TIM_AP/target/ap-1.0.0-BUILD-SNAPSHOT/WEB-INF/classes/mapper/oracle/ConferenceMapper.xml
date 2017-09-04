@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tim.ap.mapper.ConferenceMapper">
+
+	<resultMap type="com.tim.ap.entity.ConferenceEntity" id="ConferenceResultMap">
+		<result property="id" column="ID" />
+		<result property="title" column="TITLE" />
+		<result property="date" column="DATE" />
+		<result property="role" column="ROLE" />
+		<result property="entry" column="ENTRY" />
+	</resultMap>
+
+	<select id="getConferenceList" resultType="com.tim.ap.entity.ConferenceEntity">
+		SELECT ID, TITLE, DATE, ROLE, ENTRY
+		FROM CONFERENCE
+	</select>
+
+</mapper>

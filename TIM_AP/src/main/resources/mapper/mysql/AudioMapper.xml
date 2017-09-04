@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tim.ap.mapper.AudioMapper">
+
+	<resultMap type="com.tim.ap.entity.AudioEntity" id="AudioResultMap">
+		<result property="id" column="ID" />
+		<result property="c_id" column="C_ID" />
+		<result property="m_email" column="M_EMAIL" />
+		<result property="time_beg" column="TIME_BEG" />
+		<result property="time_end" column="TIME_END" />
+		<result property="ad_text" column="AD_TEXT" />
+		<result property="ad_wav_filepath" column="AD_WAV_FILEPATH" />
+		<result property="ad_download_cnt" column="AD_DOWNLOAD_CNT" />
+	</resultMap>
+
+	<select id="getAudioList" parameterType="com.tim.ap.entity.AudioEntity" resultType="com.tim.ap.entity.AudioEntity">
+		SELECT ID, C_ID, M_EMAIL, TIME_BEG, TIME_END, AD_TEXT, AD_WAV_FILEPATH, AD_DOWNLOAD_CNT
+			FROM AUDIO
+			<where>
+				<if test="id != 0">
+					ID = #{id}
+				</if>
+				<if test="c_id != 0">
+					C_ID = #{c_id}
+				</if>
+			</where>
+	</select>
+
+	<insert id="insertAudio" parameterType="com.tim.ap.entity.AudioEntity">
+		INSERT INTO AUDIO (C_ID, M_EMAIL, TIME_BEG, TIME_END, AD_TEXT, AD_WAV_FILEPATH, AD_DOWNLOAD_CNT)
+			VALUES (#{c_id}, #{m_email}, #{time_beg}, #{time_end}, #{ad_text}, #{ad_wav_filepath}, #{ad_download_cnt})
+	</insert>
+
+	<update id="updateAudio" parameterType="com.tim.ap.entity.AudioEntity">
+		UPDATE AUDIO
+			SET
+			<if test="ad_download_cnt != 0">
+				AD_DOWNLOAD_CNT = AD_DOWNLOAD_CNT + 1
+			</if>
+			WHERE
+				ID = #{id}
+	</update>
+</mapper>
